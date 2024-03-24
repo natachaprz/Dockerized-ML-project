@@ -1,18 +1,18 @@
-# Full-stack-Dockerized-ML-project
-Ce projet vise à créer une application Streamlit qui sert d'interface utilisateur pour effectuer des prédictions sur un modèle ML pré-entraîné.
+# A Dockerized-ML-project
+This project aims to create a Streamlit application serving as a user interface for making predictions with a pre-trained ML model.
 
-## Structure du Projet
-Le projet est organisé comme suit :
-- `server/`: Contient le script `train.py` pour entraîner le modèle et le script `API.py` pour le serveur FastAPI.
-- `client/`: Contient le script `app.py` pour l'interface utilisateur Streamlit.
-- `requirements.txt`: Les dépendances Python nécessaires pour le serveur et le client.
+## Project Structure
+The project is organized as follows:
+- `server/`: Contains the `train.py` script for training the model and the `API.py` script for the FastAPI server.
+- `client/`: Contains the `app.py` script for the Streamlit user interface.
+- `requirements.txt`: Python dependencies required for both server and client.
 
-## Installation et Utilisation
-1. Clonez ce dépôt sur votre machine locale.
-2. Tapez 'docker compose up --build' pour construire et exécuter l'image Docker.
-6. Accédez à "http://localhost:8501" pour accéder à l'application Streamlit.
+## Setup
+1. Clone this repository to your local machine: `gh repo clone natachaprz/Dockerized-ML-project`
+2. Run `docker compose up --build`to build and run the Docker image.
+3. Access `http://localhost:8501` to use the Streamlit application.
 
-## Fonctionnalités
-- Le script `train.py` entraîne un modèle de classification d'Iris en utilisant scikit-learn et sauvegarde le modèle entraîné dans un fichier `model.pkl`.
-- Le serveur FastAPI expose un endpoint POST `/predict` qui prend en charge les prédictions en utilisant le modèle entraîné.
-- L'application client Streamlit permet à l'utilisateur de saisir les caractéristiques de l'Iris et de voir la prédiction du modèle.
+## Features
+- The `train.py` script trains an Iris classification model using scikit-learn and saves the trained model to a `model.pkl` file.
+- The FastAPI server exposes a POST endpoint `/predict` for making predictions using the trained model.
+- The Streamlit client application allows the user to input Iris features and see the model's prediction
