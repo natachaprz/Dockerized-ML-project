@@ -8,7 +8,7 @@ The project is organized as follows:
 - `requirements.txt`: Python dependencies required for both server and client.
 
 ## Setup
-1. Clone this repository to your local machine: `gh repo clone natachaprz/Dockerized-ML-project`
+1. Clone this repository to your local machine: `git clone https://github.com/natachaprz/Dockerized-ML-project.git`
 2. Run `docker compose up --build`to build and run the Docker image.
 3. Access `http://localhost:8501` to use the Streamlit application.
 
